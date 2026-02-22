@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="../contact page/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <main class="container">
+            <!-- left side info-section -->
+
+            <section class="info-section">
+                <div class="info-content">
+                    <span class="badge">Contact</span>
+                    <h1>Let's Work togather</h1>
+                    <p>Have a project in mind? We’d love to hear from you.
+                        Send us a message and we’ll respond as soon as
+                        possible.</p>
+                    <!-- contact-cards -->
+                    <div class="contact-cards">
+                        <!-- email-card -->
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <span class="card-label">Email</span>
+                                <a href="mailto:abdikafihonest123@gmail.com">hello@example.com</a>
+                            </div>
+                        </div>
+                        <!-- phone-card -->
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <span class="card-label">Phone</span>
+                             <a href="tel:+252610880212">+252 610 88 02 12</a>
+                            </div>
+                        </div>
+                        <!-- location-card -->
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-location"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <span class="card-label">Office</span>
+                               <span>123 Street, San Francisco, CA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- social-media -->
+                    <div class="social-media">
+                        <a href="#" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        </div>
+                </div>
+            </section>
+            <!-- right side form-section -->
+            <section class="info-from">
+                <form action="#" class="contact-from" id="contact-from">
+                    <h2>Send a message</h2>
+                    <!-- form-row -->
+                   <div class="form-row">
+                    <!-- first name -->
+                    <div class="form-group">
+                        <label for="first-name">Frist name</label>
+                        <input type="text" id="first-name"  placeholder="kafi" required >
+                    </div>
+                    <!-- last name -->
+                    <div class="form-group">
+                        <label for="last-name">Last-name</label>
+                        <input type="text" id="last-name"  placeholder="yusuf" required >
+                    </div>
+                   </div>
+
+                   <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email"  placeholder="hello@example.com" required >
+                    </div>
+                   <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select  id="subject">
+                            <option value="" selected disabled>Select a topic</option>
+                            <option value="general">Genaral inquiry</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="Other"> Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mEssage">Message</label>
+                        <textarea  id="mEssage" placeholder="tell us your project...." required rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Send Massage</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+
+                <!-- success masage -->
+
+                 <div class="seccess-state hidden" id="success">
+                    <div class="seccess-icon">
+                        <i  class="fa-solid  fa-check"></i>
+                    </div>
+                    <h2>Message Sent!</h2>
+                    <p>Thanks for reaching out . We'll get back to you within 24 hours.</p>
+                    <button class="reset-btn" id="reset-btn">Send another message</button>
+                 </div>
+            </section>
+        </main>
+        <script src="/contact page/script.js"></script>
+    </body>
+</html>
